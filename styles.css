@@ -12,6 +12,7 @@
   --text:         #e4d9bb;
   --card-bg:      rgba(255,255,255,0.04);
   --card-border:  rgba(212,175,55,0.2);
+  /* Schede vino: sfondo crema */
   --wc-bg:        #f5f0e8;
   --wc-border:    #d9cfb8;
   --wc-text:      #1a1208;
@@ -45,6 +46,7 @@ body {
 }
 
 /* ---- CONTENITORE PRINCIPALE ---- */
+/* max 680px = larghezza form Google, centrato con padding laterali */
 .form-flow-container {
   width: 100%;
   max-width: 680px;
@@ -119,7 +121,9 @@ body {
 }
 
 /* ---- LISTA ENOTECHE ---- */
-.form-card ul { list-style: none; }
+.form-card ul {
+  list-style: none;
+}
 .form-card ul li {
   padding: 0.55rem 0;
   border-bottom: 1px solid rgba(212,175,55,0.1);
@@ -141,6 +145,7 @@ body {
 }
 
 /* ---- GRIGLIA VINI ---- */
+/* Mobile: 1 col | Tablet (≥500px): 2 col | Desktop (≥760px): 3 col */
 .wine-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -281,4 +286,22 @@ body {
   padding: 0.8rem 1rem 2.5rem;
   color: var(--muted);
   font-size: 0.85rem;
+}
+/* ---- DISCLAIMER CTA ---- */
+.cta-disclaimer {
+  font-size: 0.78rem;
+  color: var(--muted);
+  opacity: 0.75;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* ---- PRIVACY NOTE FOOTER ---- */
+.privacy-note {
+  margin-top: 0.8rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  opacity: 0.65;
+  line-height: 1.5;
 }
